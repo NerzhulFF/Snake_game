@@ -19,7 +19,6 @@ export default class Snake extends Field {
     this.onePart.style.height = `${this.cellLength}px`;
     this.onePart.style.top = `${y * this.cellLength}px`;
     this.onePart.style.left = `${x * this.cellLength}px`;
-    // this.onePart.innerText = x;
 
     this.#snakeArray.push({ element: this.onePart, x: x, y: y });
     this.fieldElement.append(this.onePart);
